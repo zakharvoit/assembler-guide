@@ -9,6 +9,7 @@ ${NAME}.pdf : ${NAME}.tex ${SOURCE}
 
 deploy: ${NAME}.pdf
 	scp ${NAME}.pdf voit@rain.ifmo.ru:~/public_html/
+
 clean:
 	rm -rf auto
 	rm -f *.aux
